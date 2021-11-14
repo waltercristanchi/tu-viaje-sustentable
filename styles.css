@@ -90,6 +90,7 @@ header{
     margin-top: 1rem;
     width: 80%;
     height: 60%;
+    margin: auto;
 }
 .descripcion{
     margin-top: 2rem;
@@ -109,6 +110,8 @@ form{
     padding: 1rem;
     row-gap: 1rem;
     border-radius: 5px;
+    margin: auto;
+    margin-top: 1rem;
 }
 form input{
     background: rgb(241, 241, 241);
@@ -138,6 +141,7 @@ button{
     font-size: 1.5rem;
 }
 .bus-section-image{
+    display: grid;
     margin: auto;
     margin-top: -3rem;
    
@@ -146,9 +150,11 @@ button{
     width: 40%;
     height: 60%;
 }
-.bus-section .bus-image{
-    transform: translate(400%, 0px);
+.bus-section .imagen{
+    width: 100%;
+    height: 100%;
 }
+
 
 .bus-section span{
     color: #0a332a;
@@ -168,7 +174,7 @@ button{
     margin-top: 2rem;
 }
 .last-section h2{
-    width: 50%;
+    width: 100%;
 }
 .last-section span{
     width: 50%;
@@ -214,6 +220,9 @@ footer span{
     .bus-section{
         grid-template-columns: 1fr 1fr;
         padding: 0 5rem;
+    }
+    .bus-section .bus-image{
+        transform: translate(400%, 0px);
     }
     .bus-section-image{
         display: flex;
