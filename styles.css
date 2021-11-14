@@ -1,0 +1,233 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  .modal-grid{
+      display: flex;
+  }
+  .modal-grid img{
+      width: 240px;
+      height: 240px;
+  }
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .green-filter{
+    filter: invert(23%) sepia(97%) saturate(3994%) hue-rotate(161deg) brightness(91%) contrast(80%);
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+
+h1{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    height: 60px;
+    background: #197e68;
+    color: white;
+}
+.social-media{
+    display: flex;
+    column-gap: 1.5rem;
+}
+.social-media img{
+    width: 32px;
+    height: 32px;
+}
+.section-main{
+    min-height: 512px;
+    color: white;
+    background: #197e68;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+    column-gap: 1rem;
+    padding: 1rem;
+}
+.section-main img{
+    margin-top: 1rem;
+    width: 80%;
+    height: 60%;
+}
+.descripcion{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: center;
+}
+form{
+    max-height: 512px;
+    
+    min-width: 360px;
+    color: black;
+    background: white;
+    display: grid;
+    padding: 1rem;
+    row-gap: 1rem;
+    border-radius: 5px;
+}
+form input{
+    background: rgb(241, 241, 241);
+    border: none;
+    outline: none;
+}
+button{
+    background: #197e68;
+    color: white;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    margin-bottom: 3rem;
+}
+.bus-section{
+    background: rgb(241, 241, 241);
+    min-height: 360px;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.bus-section h2{
+    font-size: 2rem;
+    margin-top: 4rem;
+}
+.bus-section p{
+    font-size: 1.5rem;
+}
+.bus-section-image{
+    margin: auto;
+    margin-top: -3rem;
+   
+}
+.bus-section-image img{
+    width: 40%;
+    height: 60%;
+}
+.bus-section .bus-image{
+    transform: translate(400%, 0px);
+}
+
+.bus-section span{
+    color: #0a332a;
+
+
+    font-size: 2rem;
+    text-align: justify;
+}
+.bus-section p{
+    color: #125c4c;
+
+}
+.last-section{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    margin-top: 2rem;
+}
+.last-section h2{
+    width: 50%;
+}
+.last-section span{
+    width: 50%;
+}
+.last-section ul{
+    display: flex;
+}
+.last-section ul li {
+    display: flex;
+    width: 240px;
+}
+footer{
+    margin-top: 2rem;
+    display: grid;
+    background: #125c4c;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+footer span{
+    display: grid;
+    margin: auto;
+    width: 70%;
+    padding: 0 1rem;
+    font-size: 2rem;
+}
+@media screen and (min-width:768px){
+    header h1{
+        margin-left: 5rem;
+    }
+    header .social-media{
+        margin-right: 5rem;
+    }
+    .section-main{
+        grid-template-columns: 1fr 1fr;
+        padding: 0 5rem;
+    }
+    .section-main .descripcion{
+        text-align: justify;
+
+        width: 50%;
+    }
+    .bus-section{
+        grid-template-columns: 1fr 1fr;
+        padding: 0 5rem;
+    }
+    .bus-section-image{
+        display: flex;
+        flex-direction: column;
+        margin-top: -7rem;
+    }
+    .bus-section-image .imagen{
+        width: 70%;
+       
+    }
+    .last-section{
+        padding: 0 5rem;
+    }
+    footer{
+        padding: 2 5rem;
+    }
+}

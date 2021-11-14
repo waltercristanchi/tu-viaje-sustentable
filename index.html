@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Muchas Gracias!</h2>
+        <div class="modal-grid">
+            <img src="agradecimiento.png" alt="">
+            <div>
+                <p>Con tu apoyo estamos seguros de que vamos a ser la primera universidad de argentina carbono-neutral y cumplir el objetivo de #ZeroEmisiones</p>
+                <span>Ayudanos compartiendo la campaña en tus redes sociales y con tus compañeros asi ellos tambien nos ayudan a compensar sus emisiones</span>
+                <br>
+                <img class="green-filter" src="facebook.png" alt="">
+                <img class="green-filter" src="instagram.png" alt="">
+                <br>
+               
+            </div>
+        </div>
+    </div>
+
+</div>
+   <div class="wrapper">
+    <header>
+        <h1>Tu Viaje Sustentable</h1>
+        <div class="social-media">
+            <img src="facebook.png" alt="">
+            <img src="instagram.png" alt="">
+        </div>
+     </header>
+     <section class="section-main">
+       <div class="descripcion">
+         <span>
+             Escanea el codigo QR que ves en el estacionamiento o en la parada del colectivo y ayudanos a cumplir el objetivo de ser carbono neutrales
+         </span>
+         <img src="background.jpg" alt="">
+       </div>
+         <form action="#">
+             <span>Completa tus datos</span>
+             <label for="nombre">Nombre</label>
+             <input type="text" id="nombre" name="nombre" placeholder="...">
+             <label for="apellido">Apellido</label>
+             <input type="text" id="apellido" name="apellido" placeholder="...">
+             <label for="dni">DNI</label>
+             <input type="text" id="dni" name="dni" placeholder="...">
+             <button id="myBtn">Enviar</button>
+             
+         </form>
+     </section>
+    <section class="bus-section">
+        <div class="bus-section-image">
+            <img class="bus-image" src="bus.svg" alt="">
+            <img class="imagen" src="image.jfif" alt="">
+
+        </div>    
+        <div>
+            <h2>Queremos ser la primera universidad de Aargentina neutra en carbono</h2>
+
+            <p>Es decir queremos compensar las emisiones de nuestros <br> estudiantes aportando 
+                a la conservacion de bosques nativos. Para ello por cada vez que cargas tu viaje hacemos una donación a la fundación
+                <a href="">Seamos Bosques</a>. El dinero es destinado a la plantacion y cuidado de un Arbol. De este modo compensamos las emisiones que producen nuestros estudiantes al venir a la facu
+            
+            </p>
+        </div>
+    </section> 
+    <section class="last-section">
+        <h2>Para ayudarnos a lograr el objetivo de ser carbono-neutrales solo tenes que hacer lo siguiente:</h2>
+        <ul>
+            
+                <li>Si venis en bondi: Escanea el QR que esta en la parada y completa tus datos</li>
+                <li>Si venis en auto: Escanea el QR que esta en el estacionamiento</li>
+                <li>Si vas a tu CAU: Escanea el QR que esta en la sala donde rendis tus examenes</li>
+           
+        </ul>
+        <span>Cada vez que cargues tu viaje sumas chances para el sorteo de viajes gratis por un año para venir a la facu en colectivo o por puntos que podes canjear por biodisel para llenar el tanque de tu auto</span>
+    </section> 
+    <footer>
+        <span>
+            Gracias por ayudarnos a cuidar el planeta! <br>
+            Compartí asi tus compañeros se enteran y nos ayudan a llegar mas rapido al objetivo de ser carbono-neutrales
+        </span>
+      
+    </footer>
+   </div>
+</body>
+
+<script>
+
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function(e) {
+    e.preventDefault()
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+</html>
